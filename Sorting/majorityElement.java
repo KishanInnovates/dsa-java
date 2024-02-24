@@ -5,7 +5,7 @@ class majorityElement {
       int[] arr = {1, 1, 3, 3, 3, 4};
     int majority = bubble(arr);
     System.out.println(majority);
-  }git add
+  }
   static int  bubble(int[] arr){
     boolean swapped;
     for(int  i = 0; i < arr.length; i++){
