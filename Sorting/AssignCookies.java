@@ -2,9 +2,9 @@ import java.util.Arrays;
 
 class AssignCookies {
     public static void main(String[] args) {
-        
+
     }
-    
+
     public int findContentChildren(int[] g, int[] s) {
         Arrays.sort(g);
         Arrays.sort(s);
