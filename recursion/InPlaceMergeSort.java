@@ -4,7 +4,7 @@ public class InPlaceMergeSort {
     }
 
     static void mergeSort(int[] arr, int s, int e) {
-        if(e -s = 1){
+        if(e -s == 1){
             return;
         }
         int mid = (s+e)/2;
