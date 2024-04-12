@@ -1,6 +1,8 @@
 public class GrayToBinary {
     public static void main(String[] args) {
-        
+        int n = 4;
+        grayToBinary(n);
+        System.out.println(n);
     }
      public static int grayToBinary(int n) {
         
