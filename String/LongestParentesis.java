@@ -1,9 +1,13 @@
-public class LongestParentesis {
+public class LongestParentesis extends Solution {
     public static void main(String[] args) {
+        String s = "((()))";
+        int result = Solution.longestValidParentheses(s);
+        System.out.println(result);
+
 
     }
     class Solution {
-  public int longestValidParentheses(String s) {
+  public static int longestValidParentheses(String s) {
     final String s2 = ")" + s;
     
     int dp[] = new int[s2.length()];
