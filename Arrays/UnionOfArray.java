@@ -26,7 +26,7 @@ class UnionOfArray {
                     lastAdded = arr2[j];
                 }
                 j++;
-            } else {
+            } else { //for equal to elements
                 if (arr1[i] != lastAdded) {
                     union.add(arr1[i]);
                     lastAdded = arr1[i];
