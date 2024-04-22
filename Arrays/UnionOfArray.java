@@ -12,6 +12,7 @@ class UnionOfArray {
         ArrayList<Integer> union = new ArrayList<>();
         int i = 0, j = 0;
         int lastAdded = Integer.MIN_VALUE;
+        //code doesn't copy the same elements
 
         while (i < arr1.length && j < arr2.length) {
             if (arr1[i] < arr2[j]) {
