@@ -10,5 +10,11 @@ public class Main {
         list.insert(100, 3);
         System.out.println(list.deleteFirst());
         list.display();
+
+        System.out.println(list.deleteLast());
+        list.display();
+
+        System.out.println(list.delete(2));
+    
     }
 }
