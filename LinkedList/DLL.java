@@ -15,13 +15,23 @@ public class DLL {
 
     public void display() {
         Node node = head;
+        Node last = null;
         while (node != null) {
             System.out.print(node.val + " -> ");
+            last = node;
             node = node.next;
         }
         System.out.println("END");
+
+        System.out.println("Print in reverse");
+        while (last != null) {
+            System.out.print(last.val + " -> ");
+            last = last.prev;
+        }
+        System.out.println("Start");
     }
 
+    
 
     private class Node {
         int val;
