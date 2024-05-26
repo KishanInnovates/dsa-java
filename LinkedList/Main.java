@@ -16,5 +16,11 @@ public class Main {
 
         System.out.println(list.delete(2));
     
+         DLL list1 = new DLL();
+        list1.insertFirst(3);
+        list1.insertFirst(4);
+        list1.insertFirst(5);
+        list1.insertFirst(9);
+        list1.display();
     }
 }
