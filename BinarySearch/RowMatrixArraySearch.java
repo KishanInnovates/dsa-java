@@ -8,7 +8,7 @@ class RowMatrixArraySearch {
             {28, 38, 37, 49},
             {33, 34, 38, 50}
         };
-        System.out.println(Arrays.toString(search(arr, 68)));
+       //input System.out.println(Arrays.toString(search(arr, 68)));
     } 
     static int[] search(int[][] matrix, int target){
         int r = 0;
