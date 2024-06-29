@@ -5,6 +5,7 @@ class ReverseArray {
         int[] array = {1, 2, 3, 4, 5, 6};
         int k = 3;
         reversefirstK(array, k);
+//input
         System.out.println(Arrays.toString(array));
         reverseRemaining(array, k);
         System.out.println(Arrays.toString(array));
