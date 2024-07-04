@@ -32,6 +32,7 @@ public class CycleInLinkedList {
         ListNode cycleNode = solution.detectCycle(node1);
 
         if (cycleNode != null) {
+            //output
             System.out.println("Cycle detected at node with value: " + cycleNode.val);
         } else {
             System.out.println("No cycle detected");
