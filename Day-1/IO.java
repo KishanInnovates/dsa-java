@@ -8,7 +8,7 @@ class IO {
         System.out.print("Enter name: ");
         String name = scn.nextLine();
 
-        //integer input
+        //integer input in the program
         System.out.println("Enter age: ");
         int age = scn.nextInt();
 
