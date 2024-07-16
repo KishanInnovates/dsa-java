@@ -3,6 +3,7 @@ public class SearchInRotatedArray {
         int[] arr = { 1, 2, 3, 4, 5 };
         int key = 5;
         int result = search(arr, key);
+        //ouput
         System.out.println(result);
     }
     
