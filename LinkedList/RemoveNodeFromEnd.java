@@ -37,6 +37,6 @@ public class RemoveNodeFromEnd {
 
         second.next = second.next.next;
         return dummy.next;
-
+        //return
     }
 }
