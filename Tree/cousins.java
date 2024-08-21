@@ -13,7 +13,7 @@ class TreeNode {
  }
 public class cousins {
     public static void main(String[] args) {
-
+            //gfg test cases not passed
     }
 
     public static boolean isCousins(TreeNode root, int x, int y) {
