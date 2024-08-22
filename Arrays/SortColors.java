@@ -6,7 +6,7 @@ public class SortColors {
             System.out.print(i + " ");
         }
     }
-
+    //uses bubble sort time complexity : O(N2) space complexity : O(1)
     public static void sortColors(int[] arr) {
         boolean swapped;
         for (int i = 0; i < arr.length; i++) {
