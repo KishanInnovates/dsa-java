@@ -1,9 +1,15 @@
 import java.util.ArrayList;
 
+
+// https://www.geeksforgeeks.org/problems/subarray-with-given-sum-1587115621/1?itm_source=geeksforgeeks&itm_medium=article&itm_campaign=practice_card
 public class SubArray {
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 4 ,5 , 6, 7};
         int n = 5;
+        ArrayList<Integer> result = subArraySum(arr, n);
+        for (int i : result) {
+            System.out.print( i + " ");
+        }
     }
 
     public static ArrayList<Integer> subArraySum(int[] arr, int s) {
