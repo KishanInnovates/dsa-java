@@ -1,3 +1,15 @@
+class DLLNode {
+    int data;
+    DLLNode next;
+    DLLNode prev;
+
+    DLLNode(int val) {
+        data = val;
+        next = null;
+        prev = null;
+    }
+}
+
 public class DLLreverse {
     public static void main(String[] args) {
 
