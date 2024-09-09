@@ -4,7 +4,7 @@ class MaxAltitude {
     public static void main(String[] args) {
         int[] gain = { -5, 1, 5, 0, -7 };
         int result = largestAltitude(gain);
-        System.out.println("The highest altitude is: " + result);
+        System.out.println("The highest altitude is: " + result); //output
     }
 
     public static int largestAltitude(int[] nums) {
