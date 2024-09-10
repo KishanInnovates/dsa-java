@@ -2,7 +2,7 @@ public class GCD {
     public static void main(String[] args) {
        String str1 = "ABCABC";
        String str2 = "ABC";
-       System.out.println(gcdOFString(str1, str2));
+       System.out.println(gcdOFString(str1, str2)); //output
     }
 
     public static String gcdOFString(String str1, String str2) {
