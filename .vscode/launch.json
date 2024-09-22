@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "MiddleNode",
+      "request": "launch",
+      "mainClass": "MiddleNode",
+      "projectName": "DSA_cee4da5c"
+    },
+    {
+      "type": "java",
       "name": "armstrong",
       "request": "launch",
       "mainClass": "maths.armstrong",
