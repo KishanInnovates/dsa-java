@@ -16,7 +16,7 @@ class reverseALinkedList {
         head.next.next.next = new Node(4);
         head.next.next.next.next = new Node(5);
         head = reverse(head);
-        printList(head);
+        printList(head); //output: 5 4 3 2 1
     }
 
     public static Node reverse(Node head) {
