@@ -4,7 +4,7 @@ public class keyAndRoom {
     public static void main(String[] args) {
 
     }
-    
+    //leetcode
   public boolean canVisitAllRooms(List<List<Integer>> rooms) {
     int[] seen = new int[rooms.size()];
     dfs(rooms, 0, seen);
