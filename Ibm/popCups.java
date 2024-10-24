@@ -9,7 +9,7 @@ public class popCups {
         cups.add("Green");
         cups.add("Yellow");
 
-        String choice = "Green";
+        String choice = "Yellow";
 
         pop(cups, choice);
     }
@@ -17,7 +17,7 @@ public class popCups {
     public static void pop(List<String> cups, String choice) {
         if(cups.contains(choice)){
             int position = cups.indexOf(choice);
-            System.out.println(position);
+            System.out.println(position + 1);
 
             for (int i = 0; i <= position; i++) {
                 cups.remove(0);
