@@ -1,6 +1,6 @@
 class Pattern1 {
     public static void main(String[] args) {
-        pattern11(4);
+        pattern12(6);
 
     }
 
@@ -128,6 +128,17 @@ class Pattern1 {
             }
             System.out.println();
             spaces -= 2;
+        }
+    }
+
+    public static void pattern12(int n) {
+        int num = 1;
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(num + " ");
+                num++;
+            }
+            System.out.println();
         }
     }
 }
