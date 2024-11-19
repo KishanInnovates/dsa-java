@@ -1,6 +1,16 @@
 public class NextPermutation {
     public static void main(String[] args) {
-
+        int[] arr = { 2, 4, 1, 7, 5, 0 };
+        System.out.print("The input array is: ");
+        for (int num : arr) {
+            System.out.print(num + " ");
+        }
+        System.out.println();
+        nextPermutation(arr);
+        System.out.print("The next possible array is:");
+        for (int num : arr) {
+            System.out.print(num + " ");
+        }
     }
     public static void nextPermutation(int[] arr) {
         int n = arr.length;
