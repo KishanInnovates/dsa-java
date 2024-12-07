@@ -11,7 +11,7 @@ public class SecondLargest {
             return -1;
         
         int largest = Integer.MIN_VALUE;
-        int secondLargest = Integer.MAX_VALUE;
+        int secondLargest = Integer.MIN_VALUE;
 
         for (int i = 0; i < n; i++) {
             if (arr[i] > largest) {
