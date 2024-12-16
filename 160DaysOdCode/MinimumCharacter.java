@@ -1,20 +1,22 @@
-class MinimumCharactersPalindrome {
-    public static int minCharsToAdd(String s) {
-        
+public class MinimumCharacter {
+    public static void main(String[] args) {
+        String s1 = "abc";
+        System.out.print("The minimum length of the substring is:" + minChar(s1));
+    }
+
+    public static int minChar(String s) {
         String reverse = new StringBuilder(s).reverse().toString();
         String concat = s + "#" + reverse;
 
-        
         int lps = computeLPS(concat);
 
-        
         return s.length() - lps;
     }
 
-    private static int computeLPS(String str) {
+    public static int computeLPS(String str) {
         int n = str.length();
         int[] lps = new int[n];
-        int len = 0; // Length of the previous longest prefix suffix
+        int len = 0;
         int i = 1;
 
         while (i < n) {
@@ -31,18 +33,6 @@ class MinimumCharactersPalindrome {
                 }
             }
         }
-        return lps[n - 1]; // The value at the last index of the LPS array
-    }
-
-    public static void main(String[] args) {
-        String s1 = "abc";
-        System.out.println(minCharsToAdd(s1)); // Output: 2
-
-        String s2 = "aacecaaaa";
-        System.out.println(minCharsToAdd(s2)); // Output: 2
-
-        String s3 = "abcd";
-        System.out.println(minCharsToAdd(s3)); // Output: 3
+        return lps[n - 1];
     }
 }
-
