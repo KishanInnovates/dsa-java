@@ -17,6 +17,7 @@ public class Citations {
     public static int hIndex(int[] citations){
         Arrays.sort(citations);
         int n = citations.length;
+        System.out.println("The length of the array is: " + n);
 
         for (int i = 0; i < n; i++) {
             if (citations[i] >= n - i) {
