@@ -5,6 +5,7 @@ public class RemoveDigit {
         String result = removeDigit(number, digit);
         System.out.println("The answer will be: " + result);
     }
+    //https://leetcode.com/problems/remove-digit-from-number-to-maximize-result/description/
 
     public static String removeDigit(String number, char digit) {
         for (int i = 0; i < number.length() - 1; i++) {
