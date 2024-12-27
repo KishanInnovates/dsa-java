@@ -4,6 +4,7 @@ public class DifferentConsecutiveCharac {
         int result = count(str);
         System.out.println(result);
     }
+    //https://www.codechef.com/practice/course/strings/STRINGS/problems/DIFFCONSEC
     public static int count(String str){
         int operations = 0;
 
