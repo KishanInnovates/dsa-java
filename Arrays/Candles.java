@@ -2,7 +2,7 @@ public class Candles {
     public static void main(String[] args) {
         int[] candles = { 4, 4, 2, 3 };
         int result = birthdayCandle(candles);
-        System.out.println(result);
+        System.out.println(result); //output : 2
     }
 
     public static int birthdayCandle(int[] candles) {
