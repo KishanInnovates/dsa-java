@@ -3,7 +3,7 @@ public class CountOnes {
         String str = "1111";
         System.out.println("The number of substring is: " + countOnes(str));
     }
-
+    // https://www.geeksforgeeks.org/problems/binary-string-1587115620/1?page=1&difficulty=Basic&status=unsolved&sortBy=submission
     public static int countOnes(String str) {
         int n = str.length();
         int count = 0;
