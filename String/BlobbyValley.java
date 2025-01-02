@@ -1,7 +1,7 @@
 public class BlobbyValley {
 
     public static void main(String[] args) {
-        String s = "ABABB";
+        String s = "A";
         scoreCalculate(s);
         
     }
