@@ -4,6 +4,7 @@ public class CountSubArrays {
         int[] arr1 = {10, 2, -2, -20, 10};
         int k1 = -10;
         System.out.println(countSubArray(arr1, k1)); // Output: 3
+        //https://www.geeksforgeeks.org/problems/subarrays-with-sum-k/1
     }
 
     public static int countSubArray(int[] arr, int k) {
