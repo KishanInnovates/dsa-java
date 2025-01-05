@@ -22,7 +22,7 @@ class Discount {
         }
 
         //calculte discount
-        int discountedCost = 0;
+        int discountedCost = x;
         for (int price : prices) {
             if (price > y) {
                 discountedCost += (price - y);
