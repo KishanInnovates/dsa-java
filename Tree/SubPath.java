@@ -7,11 +7,11 @@ class ListNode {
     }
 }
 
-class TreeNode {
+class Node {
     int val;
-    TreeNode left;
-    TreeNode right;
-    TreeNode(int val) {
+    Node left;
+    Node right;
+    Node(int val) {
         this.val = val;
         this.left = null;
         this.right = null;
@@ -20,13 +20,13 @@ class TreeNode {
 
  class SubPath {
     
-    public boolean isSubPath(ListNode head, TreeNode root) {
+    public boolean isSubPath(ListNode head, Node root) {
         if (root == null) return false;
         // Check if the list starts from the current node or any of its descendants
         return dfs(head, root) || isSubPath(head, root.left) || isSubPath(head, root.right);
     }
     
-    private boolean dfs(ListNode head, TreeNode node) {
+    private boolean dfs(ListNode head, Node node) {
         // If we reached the end of the list, return true
         if (head == null) return true;
         // If we reached a null node in the tree, return false
@@ -43,12 +43,12 @@ class TreeNode {
         head.next = new ListNode(2);
         head.next.next = new ListNode(8);
 
-        TreeNode root = new TreeNode(1);
-        root.left = new TreeNode(4);
-        root.right = new TreeNode(4);
-        root.left.right = new TreeNode(2);
-        root.left.right.left = new TreeNode(6);
-        root.left.right.right = new TreeNode(8);
+        Node root = new Node(1);
+        root.left = new Node(4);
+        root.right = new Node(4);
+        root.left.right = new Node(2);
+        root.left.right.left = new Node(6);
+        root.left.right.right = new Node(8);
 
         Solution solution = new Solution();
         System.out.println(solution.isSubPath(head, root)); // Output: true
