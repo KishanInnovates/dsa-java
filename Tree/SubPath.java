@@ -1,7 +1,7 @@
-class ListNode {
+class Node {
     int val;
-    ListNode next;
-    ListNode(int val) {
+    Node next;
+    Node(int val) {
         this.val = val;
         this.next = null;
     }
@@ -20,13 +20,13 @@ class Node {
 
  class SubPath {
     
-    public boolean isSubPath(ListNode head, Node root) {
+    public boolean isSubPath(Node head, Node root) {
         if (root == null) return false;
         // Check if the list starts from the current node or any of its descendants
         return dfs(head, root) || isSubPath(head, root.left) || isSubPath(head, root.right);
     }
     
-    private boolean dfs(ListNode head, Node node) {
+    private boolean dfs(Node head, Node node) {
         // If we reached the end of the list, return true
         if (head == null) return true;
         // If we reached a null node in the tree, return false
@@ -39,9 +39,9 @@ class Node {
     
     public static void main(String[] args) {
         // Example usage:
-        ListNode head = new ListNode(4);
-        head.next = new ListNode(2);
-        head.next.next = new ListNode(8);
+        Node head = new Node(4);
+        head.next = new Node(2);
+        head.next.next = new Node(8);
 
         Node root = new Node(1);
         root.left = new Node(4);

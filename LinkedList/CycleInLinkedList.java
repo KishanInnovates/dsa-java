@@ -1,15 +1,15 @@
-class ListNode {
+class Node {
     int val;
-    ListNode next;
+    Node next;
 
-    ListNode() {
+    Node() {
     }
 
-    ListNode(int val) {
+    Node(int val) {
         this.val = val;
     }
 
-    ListNode(int val, ListNode next) {
+    Node(int val, Node next) {
         this.val = val;
         this.next = next;
     }
@@ -18,10 +18,10 @@ class ListNode {
 public class CycleInLinkedList {
     public static void main(String[] args) {
         // Test cases
-        ListNode node1 = new ListNode(3);
-        ListNode node2 = new ListNode(2);
-        ListNode node3 = new ListNode(0);
-        ListNode node4 = new ListNode(-4);
+        Node node1 = new Node(3);
+        Node node2 = new Node(2);
+        Node node3 = new Node(0);
+        Node node4 = new Node(-4);
         
         node1.next = node2;
         node2.next = node3;
@@ -29,7 +29,7 @@ public class CycleInLinkedList {
         node4.next = node2; // cycle here
 
         CycleInLinkedList solution = new CycleInLinkedList();
-        ListNode cycleNode = solution.detectCycle(node1);
+        Node cycleNode = solution.detectCycle(node1);
 
         if (cycleNode != null) {
             //output
@@ -39,15 +39,15 @@ public class CycleInLinkedList {
         }
     }
 
-    public int lengthOfCycle(ListNode head) {
-        ListNode fast = head;
-        ListNode slow = head;
+    public int lengthOfCycle(Node head) {
+        Node fast = head;
+        Node slow = head;
 
         while (fast != null && fast.next != null) {
             fast = fast.next.next;
             slow = slow.next;
             if (fast == slow) {
-                ListNode temp = slow;
+                Node temp = slow;
                 int length = 0;
                 do {
                     temp = temp.next;
@@ -59,9 +59,9 @@ public class CycleInLinkedList {
         return 0;
     }
 
-    public ListNode detectCycle(ListNode head) {
-        ListNode fast = head;
-        ListNode slow = head;
+    public Node detectCycle(Node head) {
+        Node fast = head;
+        Node slow = head;
         
         while (fast != null && fast.next != null) {
             fast = fast.next.next;
@@ -69,8 +69,8 @@ public class CycleInLinkedList {
             if (fast == slow) {
                 int length = lengthOfCycle(slow);
                 // find the start node
-                ListNode first = head;
-                ListNode second = head;
+                Node first = head;
+                Node second = head;
 
                 while (length > 0) {
                     second = second.next;

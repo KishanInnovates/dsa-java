@@ -3,10 +3,10 @@ public class ReverseLinkedList {
 
     }
 
-    public static ListNode reverse(ListNode head) {
-        ListNode prev = null;
-        ListNode present = head;
-        ListNode next = present.next;
+    public static Node reverse(Node head) {
+        Node prev = null;
+        Node present = head;
+        Node next = present.next;
 
         while (present != null) {
             present.next = prev;
