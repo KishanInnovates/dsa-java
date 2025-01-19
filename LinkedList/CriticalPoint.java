@@ -30,12 +30,13 @@ class CriticalPoint{
         int count = 0;
 
         while (next != null) {
-            if ((prev.value > current.value && current.value < next.value
-                    || prev.value < current.value && current.value > next.value)) {
-                prev = current;
+            if ((prev.value > current.value && current.value < next.value)
+                    || (prev.value < current.value && current.value > next.value)) {
+                count++;
+            }
+            prev = current;
                 current = next;
                 next = next.next;
-            }
         }
         return count;
     }
