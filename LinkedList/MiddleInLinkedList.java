@@ -1,15 +1,15 @@
-class ListNode {
+class Node {
     int val;
     ListNode next;
 
-    ListNode() {
+    Node() {
     };
 
-    ListNode(int val) {
+    Node(int val) {
         this.val = val;
     }
 
-    ListNode(int val, ListNode next) {
+    Node(int val, ListNode next) {
         this.val = val;
         this.next = next;
     }

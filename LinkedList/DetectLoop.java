@@ -1,6 +1,6 @@
 class ListNode {
     int val;
-    ListNode next;
+    Node next;
 
     ListNode() {}
 
@@ -8,7 +8,7 @@ class ListNode {
         this.val = val;
     }
 
-    ListNode(int val, ListNode next) {
+    ListNode(int val, Node next) {
         this.val = val;
         this.next = next;
     }
@@ -18,9 +18,9 @@ public class DetectLoop {
         
     }
 
-    public static boolean detectLoop(ListNode head) {
-        ListNode slow = head;
-        ListNode fast = head;
+    public static boolean detectLoop(Node head) {
+        Node slow = head;
+        Node fast = head;
 
         while (fast != null && fast.next != null) {
             slow = slow.next;

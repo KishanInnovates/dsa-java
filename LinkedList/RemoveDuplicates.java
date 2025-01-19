@@ -1,20 +1,20 @@
-class ListNode {
+class Node {
     int val;
-    ListNode next;
-    ListNode() {}
-    ListNode(int val) {this.val = val;}
-    ListNode(int val, ListNode next){
+    Node next;
+    Node() {}
+    Node(int val) {this.val = val;}
+    Node(int val, Node next){
         this.val = val;
         this.next = next;
     }
 }
 
 class RemoveDuplicates {
-    public ListNode deleteDuplicate(ListNode head) {
+    public Node deleteDuplicate(Node head) {
         if (head == null) {
             return null;
         }
-        ListNode current = head;
+        Node current = head;
         while (current != null && current.next != null) {
             if (current.val == current.next.val) {
                 current.next = current.next.next;
@@ -25,8 +25,8 @@ class RemoveDuplicates {
         return head;
     }
 
-    public static void printList(ListNode head) {
-        ListNode current = head;
+    public static void printList(Node head) {
+        Node current = head;
         while (current != null) {
             System.out.print(current.val + " -> ");
             current = current.next;
@@ -34,9 +34,9 @@ class RemoveDuplicates {
         System.out.println("End");
     }
     public static void main(String[] args) {
-        ListNode head1 = new ListNode(1, new ListNode(1, new ListNode(2)));
+        Node head1 = new Node(1, new Node(1, new Node(2)));
         RemoveDuplicates sol = new RemoveDuplicates();
-        ListNode result = sol.deleteDuplicate(head1);
+        Node result = sol.deleteDuplicate(head1);
         System.out.println("Output: ");
         printList(head1);
     }
