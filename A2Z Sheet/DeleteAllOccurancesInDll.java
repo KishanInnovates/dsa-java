@@ -9,7 +9,7 @@ class Node{
 
 public class DeleteAllOccurancesInDll {
     public static void main(String[] args) {
-
+        //gfg
     }
 
     public static Node deleteAllOccur(Node head, int key) {
