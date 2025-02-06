@@ -1,5 +1,6 @@
 import java.util.HashMap;
 import java.util.Map;
+
 public class TupleSameProduct {
     public static void main(String[] args) {
         int[] nums1 = { 2, 3, 4, 6 };
@@ -19,7 +20,7 @@ public class TupleSameProduct {
         }
         for (int freq : map.values()) {
             if (freq > 1) {
-                count += freq * (freq - 1) * 2;
+                count += freq * (freq - 1) * 4;
             }
         }
         return count;
