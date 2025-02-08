@@ -12,7 +12,8 @@ public class ConstructBinaryTree {
     private int preorderIndex = 0;
     private Map<Integer, Integer> inorderMap;
     public static void main(String[] args) {
-        
+        int n = 1 % 2;
+        System.out.println(n);
     }
 
     public TreeNode buildTree(int[] preorder, int[] inorder) {
