@@ -21,7 +21,6 @@ public class MaxPathSum {
 
         System.out.println(findmaxSum(root)); // Output: 42
     }
-
     public static int findmaxSum(Node root) {
         maxsum = Integer.MIN_VALUE;
         findMax(root);
