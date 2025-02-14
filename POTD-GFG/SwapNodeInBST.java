@@ -15,6 +15,7 @@ class SwapNodeInBST {
 
     public static void correntBST(Node node) {
         first = prev = middle = last = null;
+        inorder(node);
         if (first != null && last != null) {
             swap(first, last);
         } else if (first != null && middle != null) {
