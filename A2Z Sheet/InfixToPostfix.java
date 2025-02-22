@@ -4,11 +4,10 @@ public class InfixToPostfix {
     public static void main(String[] args) {
         String exp = "(p+q)*(m-n)";
         System.out.println("Infix expression: " + exp);
-        System.out.println("Prefix expression: " + infixToPostfix(exp));
+        System.out.println("Postfix expression: " + infixToPostfix(exp));
     }
 
     public static String infixToPostfix(String s) {
-        int i = 0;
         Stack<Character> stack = new Stack<>();
         String result = "";
         for (char ch : s.toCharArray()) {
@@ -22,7 +21,7 @@ public class InfixToPostfix {
                 }
                 stack.pop();
             } else {
-                while (!stack.isEmpty() && prec(ch) <= prec(stack.pop())) {
+                while (!stack.isEmpty() && prec(ch) <= prec(stack.peek())) {
                     result += stack.pop();
                 }
                 stack.push(ch);
