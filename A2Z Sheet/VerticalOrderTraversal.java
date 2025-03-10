@@ -15,7 +15,7 @@ public class VerticalOrderTraversal {
     }
 
     public static List<List<Integer>> verticalTraversal(Node root) {
-        TreeMap<Integer, ArrayList<int[]>> columnMap = new TreeMap<>();
+        TreeMap<Integer, List<int[]>> columnMap = new TreeMap<>();
         Queue<Object[]> q = new LinkedList<>();
 
         q.add(new Object[] { root, 0, 0 });
@@ -26,7 +26,7 @@ public class VerticalOrderTraversal {
             int row = (int) curr[1];
             int col = (int) curr[2];
 
-            columnMap.putIfAbsent(col, new ArrayList<>());
+            columnMap.putIfAbsent(col, new List<>());
             columnMap.get(col).add(new int[] { row, node.data });
 
             if (node.left != null)
@@ -34,7 +34,7 @@ public class VerticalOrderTraversal {
             if (node.right != null)
                 q.add(new Object[] { node.right, row + 1, col + 1 });
         }
-        List<List<Integer>> result = new ArrayList<>();
+        List<List<Integer>> result = new List<>();
         for (List<int[]> values : columnMap.values()) {
             values.sort((a, b) -> a[0] == b[0] ? a[1] - b[1] : a[0] - b[0]);
             List<Integer> colList = new List<>();
