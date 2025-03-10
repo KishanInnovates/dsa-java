@@ -11,4 +11,9 @@ public class List<T> {
         throw new UnsupportedOperationException("Unimplemented method 'size'");
     }
 
+    public void add(int[] is) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'add'");
+    }
+
 }
