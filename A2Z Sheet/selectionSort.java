@@ -1,7 +1,7 @@
 public class selectionSort {
 
     public static void main(String[] args) {
-
+        //tc: O(N)
     }
 
     public static int select(int[] arr, int i) {
