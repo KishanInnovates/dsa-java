@@ -5,7 +5,8 @@ class ProductArrayPuzzle{
         System.out.println(Arrays.toString(productExceptSelf(arr)));
 
         int[] arr2 = {12, 0};
-        System.out.println(Arrays.toString(productExceptSelf(arr2)));
+        System.out.println(Arrays.toString(productExceptSelf(arr2))); 
+        //tc : O(N)
     }
     public static int[] productExceptSelf(int[] arr){
         int n = arr.length;
