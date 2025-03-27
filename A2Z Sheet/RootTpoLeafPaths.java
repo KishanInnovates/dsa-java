@@ -15,9 +15,10 @@ public class RootTpoLeafPaths {
         root.right = new TreeNode(3);
         root.left.left = new TreeNode(4);
         root.left.right = new TreeNode(5);
+        root.left.left.left = new TreeNode(6)
 
         ArrayList<ArrayList<Integer>> paths = paths(root);
-        System.out.println(paths); //output : [[1, 2, 4], [1, 2, 5], [1, 3]] //O(n)
+        System.out.println(paths); //output : [[1, 2, 4], [1, 2, 5], [1, 3]] //time complexity: O(n)
     }
 
     public static ArrayList<ArrayList<Integer>> paths(TreeNode root) {
