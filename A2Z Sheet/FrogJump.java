@@ -50,8 +50,8 @@ public class FrogJump {
         int n = heights.length;
         if (n == 1)
             return 0;
-        int prev1 = 0;
-        int prev2 = Math.abs(heights[1] - heights[0]);
+        int prev2 = 0;
+        int prev1 = Math.abs(heights[1] - heights[0]);
         for (int i = 2; i < n; i++) {
             int current = Math.min(prev1 + Math.abs(heights[i] - heights[i - 1]),
                     prev2 + Math.abs(heights[i] - heights[i - 2]));
