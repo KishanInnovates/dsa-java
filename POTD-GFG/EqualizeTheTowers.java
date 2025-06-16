@@ -12,7 +12,6 @@ public class EqualizeTheTowers {
     }
 
     public static int minCost(int[] heights, int[] cost) {
-        int n = heights.length;
         int low = Arrays.stream(heights).min().getAsInt();
         int high = Arrays.stream(heights).max().getAsInt();
         int answer = Integer.MAX_VALUE;
