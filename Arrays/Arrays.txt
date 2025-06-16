@@ -1,0 +1,42 @@
+Key array techniques in DSA:
+
+Basic Operations:
+
+Accessing elements: Retrieving an element at a specific index using its array index.
+Inserting elements: Adding a new element to an array at a desired position, potentially shifting existing elements.
+Deleting elements: Removing an element from an array, often requiring shifting elements to fill the gap.
+
+Searching:
+Linear Search: Traversing the array sequentially to find a target element.
+Binary Search: Efficiently searching a sorted array by repeatedly dividing the search space in half.
+
+Array Manipulation:
+Array Rotation: Shifting all elements in an array by a specified number of positions.
+Reversing an Array: Arranging elements in reverse order.
+Finding Subarrays: Identifying a contiguous subset of elements within an array.
+Kadane's Algorithm: Finding the maximum sum of a contiguous subarray.
+
+Sorting Algorithms (using Arrays):
+Bubble Sort: Repeatedly swapping adjacent elements until the array is sorted.
+Insertion Sort: Iteratively inserting elements into their correct position in a sorted subarray.
+Merge Sort: Dividing the array into halves, recursively sorting them, and then merging the sorted halves
+Quick Sort: Choosing a pivot element and partitioning the array into elements smaller and larger than the pivot
+
+
+Advanced Techniques:
+Sliding Window: Maintaining a fixed-size window while traversing an array to analyze specific subsets.
+Two Pointers: Using multiple pointers to efficiently traverse an array and compare elements.
+Prefix Sum: Precomputing cumulative sums of array elements to perform efficient range queries. 
+
+
+Important Considerations:
+Array Size:
+Arrays have a fixed size, so proper allocation is crucial to avoid potential out-of-bounds errors. 
+
+Time Complexity:
+Analyzing the time complexity of array operations is vital for understanding the efficiency of algorithms. 
+
+Space Complexity:
+Arrays generally have good space complexity due to their contiguous memory allocation. 
+
+Practice all the techniques.
