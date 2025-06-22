@@ -4,7 +4,7 @@ import java.util.List;
 
 public class CaseSpecificSorting {
     public static void main(String[] args) {
-        
+        String s = "kishan";
     }
 
     public static String caseSort(String s){
