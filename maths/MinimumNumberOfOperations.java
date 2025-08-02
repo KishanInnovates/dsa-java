@@ -1,6 +1,9 @@
+import java.util.Arrays;
+
 public class MinimumNumberOfOperations {
     public static void main(String[] args) {
         int[] nums = { 1, 10, 2, 9 };
+        Arrays.sort(nums);
         int ops = 0;
         int median = nums[nums.length / 2];
         for (int num : nums) {
