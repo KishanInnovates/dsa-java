@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class MatrixdiffArray {
     public static void main(String[] args) {
-
+            //gfg potd
     }
     public ArrayList<ArrayList<Integer>> applyDiff2D(int[][] mat, int[][] opr) {
         // code here
