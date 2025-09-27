@@ -24,7 +24,8 @@ public class DfsOfGraph {
         ArrayList<Integer> result = dfs(adjList);
         System.out.println(result);
     }
-
+    //time complexity: O(V + E) -> visit all nodes and edges once
+        //space complexity: O(V) -> for recursion stack + visited array
     public static ArrayList<Integer> dfs(ArrayList<ArrayList<Integer>> adj) {
         int v = adj.size();
         boolean[] visited = new boolean[v];
